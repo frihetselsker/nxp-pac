@@ -695,14 +695,6 @@ pub const SCNSCB: scn_scb::ScnScb = unsafe { scn_scb::ScnScb::from_ptr(0xe000_e0
 #[doc = "M33 Systick module"]
 pub const SYSTICK0: sys_tick0::SysTick0 =
     unsafe { sys_tick0::SysTick0::from_ptr(0xe000_e010usize as _) };
-#[doc = "Nested Vectored Interrupt Controller"]
-pub const NVIC: nvic::Nvic = unsafe { nvic::Nvic::from_ptr(0xe000_e100usize as _) };
-#[doc = "System Control Block"]
-pub const SCB: scb::Scb = unsafe { scb::Scb::from_ptr(0xe000_ed00usize as _) };
-#[doc = "Memory Protection Unit"]
-pub const MPU: mpu::Mpu = unsafe { mpu::Mpu::from_ptr(0xe000_ed90usize as _) };
-#[doc = "Security Attribution Unit"]
-pub const SAU: sau::Sau = unsafe { sau::Sau::from_ptr(0xe000_edd0usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
 #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 3;
@@ -752,10 +744,8 @@ pub mod lpspi;
 pub mod lptmr;
 pub mod lpuart;
 pub mod mailbox;
-pub mod mpu;
 pub mod mrt0;
 pub mod npx0;
-pub mod nvic;
 pub mod opamp;
 pub mod ostimer0;
 pub mod otpc0;
@@ -773,8 +763,6 @@ pub mod rtc0;
 pub mod rtc_subsystem0;
 pub mod s50;
 pub mod sai;
-pub mod sau;
-pub mod scb;
 pub mod scg0;
 pub mod scn_scb;
 pub mod sct0;
