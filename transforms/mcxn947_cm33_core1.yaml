@@ -1,5 +1,6 @@
 includes:
 - useless.yaml
 - mcx/gpio.yaml
+- mcx/port.yaml
 transforms:
   - !Sort

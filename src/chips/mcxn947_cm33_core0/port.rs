@@ -1,11 +1,11 @@
 #[doc = "PORT"]
 #[derive(Copy, Clone, Eq, PartialEq)]
-pub struct Port3 {
+pub struct Port {
     ptr: *mut u8,
 }
-unsafe impl Send for Port3 {}
-unsafe impl Sync for Port3 {}
-impl Port3 {
+unsafe impl Send for Port {}
+unsafe impl Sync for Port {}
+impl Port {
     #[inline(always)]
     pub const unsafe fn from_ptr(ptr: *mut ()) -> Self {
         Self { ptr: ptr as _ }
@@ -178,6 +178,46 @@ impl Port3 {
     #[inline(always)]
     pub const fn pcr23(self) -> crate::common::Reg<regs::Pcr23, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xdcusize) as _) }
+    }
+    #[doc = "Pin Control 24"]
+    #[inline(always)]
+    pub const fn pcr24(self) -> crate::common::Reg<regs::Pcr24, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xe0usize) as _) }
+    }
+    #[doc = "Pin Control 25"]
+    #[inline(always)]
+    pub const fn pcr25(self) -> crate::common::Reg<regs::Pcr25, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xe4usize) as _) }
+    }
+    #[doc = "Pin Control 26"]
+    #[inline(always)]
+    pub const fn pcr26(self) -> crate::common::Reg<regs::Pcr26, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xe8usize) as _) }
+    }
+    #[doc = "Pin Control 27"]
+    #[inline(always)]
+    pub const fn pcr27(self) -> crate::common::Reg<regs::Pcr27, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xecusize) as _) }
+    }
+    #[doc = "Pin Control 28"]
+    #[inline(always)]
+    pub const fn pcr28(self) -> crate::common::Reg<regs::Pcr28, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xf0usize) as _) }
+    }
+    #[doc = "Pin Control 29"]
+    #[inline(always)]
+    pub const fn pcr29(self) -> crate::common::Reg<regs::Pcr29, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xf4usize) as _) }
+    }
+    #[doc = "Pin Control 30"]
+    #[inline(always)]
+    pub const fn pcr30(self) -> crate::common::Reg<regs::Pcr30, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xf8usize) as _) }
+    }
+    #[doc = "Pin Control 31"]
+    #[inline(always)]
+    pub const fn pcr31(self) -> crate::common::Reg<regs::Pcr31, crate::common::RW> {
+        unsafe { crate::common::Reg::from_ptr(self.ptr.add(0xfcusize) as _) }
     }
 }
 pub mod regs;
