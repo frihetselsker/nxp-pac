@@ -6,37 +6,37 @@ impl Pio00 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio00Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio00Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio00Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio00Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio00Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio00Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio00Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio00Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio00Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -54,37 +54,37 @@ impl Pio00 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio00Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio00Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio00Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio00Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio00Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio00Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio00Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio00Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio00Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -131,37 +131,37 @@ impl Pio01 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio01Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio01Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio01Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio01Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio01Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio01Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio01Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio01Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio01Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -179,25 +179,25 @@ impl Pio01 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio01Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio01Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio01Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio01Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio01Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio01Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -242,37 +242,37 @@ impl Pio010 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio010Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio010Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio010Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio010Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio010Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio010Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio010Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio010Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio010Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -290,37 +290,37 @@ impl Pio010 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio010Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio010Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio010Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio010Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio010Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio010Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio010Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio010Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio010Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -367,37 +367,37 @@ impl Pio011 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio011Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio011Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio011Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio011Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio011Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio011Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio011Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio011Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio011Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -415,37 +415,37 @@ impl Pio011 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio011Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio011Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio011Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio011Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio011Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio011Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio011Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio011Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio011Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -492,37 +492,37 @@ impl Pio012 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio012Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio012Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio012Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio012Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio012Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio012Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio012Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio012Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio012Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -540,37 +540,37 @@ impl Pio012 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio012Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio012Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio012Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio012Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio012Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio012Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio012Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio012Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio012Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -617,37 +617,37 @@ impl Pio013 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio013Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio013Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio013Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio013Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio013Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio013Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio013Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio013Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio013Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -665,49 +665,49 @@ impl Pio013 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio013Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio013Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio013Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0)."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio013Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio013Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0)."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio013Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Supply Selection bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ssel(&self) -> super::vals::Pio013Ssel {
+    pub const fn ssel(&self) -> super::vals::PioSsel {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Pio013Ssel::from_bits(val as u8)
+        super::vals::PioSsel::from_bits(val as u8)
     }
     #[doc = "Supply Selection bit."]
     #[inline(always)]
-    pub const fn set_ssel(&mut self, val: super::vals::Pio013Ssel) {
+    pub const fn set_ssel(&mut self, val: super::vals::PioSsel) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Controls input glitch filter."]
     #[must_use]
     #[inline(always)]
-    pub const fn filteroff(&self) -> super::vals::Pio013Filteroff {
+    pub const fn filteroff(&self) -> super::vals::PioFilteroff {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Pio013Filteroff::from_bits(val as u8)
+        super::vals::PioFilteroff::from_bits(val as u8)
     }
     #[doc = "Controls input glitch filter."]
     #[inline(always)]
-    pub const fn set_filteroff(&mut self, val: super::vals::Pio013Filteroff) {
+    pub const fn set_filteroff(&mut self, val: super::vals::PioFilteroff) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Pull-up current source enable in I2C mode."]
@@ -725,25 +725,25 @@ impl Pio013 {
     #[doc = "Switch between GPIO mode and I2C mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn egp(&self) -> super::vals::Pio013Egp {
+    pub const fn egp(&self) -> super::vals::PioEgp {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Pio013Egp::from_bits(val as u8)
+        super::vals::PioEgp::from_bits(val as u8)
     }
     #[doc = "Switch between GPIO mode and I2C mode."]
     #[inline(always)]
-    pub const fn set_egp(&mut self, val: super::vals::Pio013Egp) {
+    pub const fn set_egp(&mut self, val: super::vals::PioEgp) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation."]
     #[must_use]
     #[inline(always)]
-    pub const fn i2cfilter(&self) -> super::vals::Pio013I2cfilter {
+    pub const fn i2cfilter(&self) -> super::vals::PioI2cfilter {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Pio013I2cfilter::from_bits(val as u8)
+        super::vals::PioI2cfilter::from_bits(val as u8)
     }
     #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation."]
     #[inline(always)]
-    pub const fn set_i2cfilter(&mut self, val: super::vals::Pio013I2cfilter) {
+    pub const fn set_i2cfilter(&mut self, val: super::vals::PioI2cfilter) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
 }
@@ -798,37 +798,37 @@ impl Pio014 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio014Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio014Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio014Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio014Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio014Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio014Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio014Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio014Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio014Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -846,49 +846,49 @@ impl Pio014 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio014Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio014Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio014Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0)."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio014Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio014Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode in standard GPIO mode (EGP = 1). This bit has no effect in I2C mode (EGP=0)."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio014Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Supply Selection bit."]
     #[must_use]
     #[inline(always)]
-    pub const fn ssel(&self) -> super::vals::Pio014Ssel {
+    pub const fn ssel(&self) -> super::vals::PioSsel {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Pio014Ssel::from_bits(val as u8)
+        super::vals::PioSsel::from_bits(val as u8)
     }
     #[doc = "Supply Selection bit."]
     #[inline(always)]
-    pub const fn set_ssel(&mut self, val: super::vals::Pio014Ssel) {
+    pub const fn set_ssel(&mut self, val: super::vals::PioSsel) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "Controls input glitch filter."]
     #[must_use]
     #[inline(always)]
-    pub const fn filteroff(&self) -> super::vals::Pio014Filteroff {
+    pub const fn filteroff(&self) -> super::vals::PioFilteroff {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Pio014Filteroff::from_bits(val as u8)
+        super::vals::PioFilteroff::from_bits(val as u8)
     }
     #[doc = "Controls input glitch filter."]
     #[inline(always)]
-    pub const fn set_filteroff(&mut self, val: super::vals::Pio014Filteroff) {
+    pub const fn set_filteroff(&mut self, val: super::vals::PioFilteroff) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "Pull-up current source enable in I2C mode."]
@@ -906,25 +906,25 @@ impl Pio014 {
     #[doc = "Switch between GPIO mode and I2C mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn egp(&self) -> super::vals::Pio014Egp {
+    pub const fn egp(&self) -> super::vals::PioEgp {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Pio014Egp::from_bits(val as u8)
+        super::vals::PioEgp::from_bits(val as u8)
     }
     #[doc = "Switch between GPIO mode and I2C mode."]
     #[inline(always)]
-    pub const fn set_egp(&mut self, val: super::vals::Pio014Egp) {
+    pub const fn set_egp(&mut self, val: super::vals::PioEgp) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation."]
     #[must_use]
     #[inline(always)]
-    pub const fn i2cfilter(&self) -> super::vals::Pio014I2cfilter {
+    pub const fn i2cfilter(&self) -> super::vals::PioI2cfilter {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Pio014I2cfilter::from_bits(val as u8)
+        super::vals::PioI2cfilter::from_bits(val as u8)
     }
     #[doc = "Configures I2C features for standard mode, fast mode, and Fast Mode Plus operation and High-Speed mode operation."]
     #[inline(always)]
-    pub const fn set_i2cfilter(&mut self, val: super::vals::Pio014I2cfilter) {
+    pub const fn set_i2cfilter(&mut self, val: super::vals::PioI2cfilter) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
 }
@@ -979,37 +979,37 @@ impl Pio015 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio015Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio015Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio015Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio015Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio015Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio015Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio015Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio015Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio015Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1027,37 +1027,37 @@ impl Pio015 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio015Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio015Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio015Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio015Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio015Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio015Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio015Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio015Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio015Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -1104,37 +1104,37 @@ impl Pio016 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio016Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio016Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio016Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio016Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio016Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio016Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio016Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio016Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio016Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1152,37 +1152,37 @@ impl Pio016 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio016Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio016Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio016Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio016Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio016Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio016Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio016Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio016Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio016Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -1229,37 +1229,37 @@ impl Pio017 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio017Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio017Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio017Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio017Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio017Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio017Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio017Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio017Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio017Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1277,25 +1277,25 @@ impl Pio017 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio017Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio017Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio017Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio017Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio017Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio017Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -1340,37 +1340,37 @@ impl Pio018 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio018Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio018Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio018Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio018Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio018Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio018Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio018Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio018Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio018Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1388,37 +1388,37 @@ impl Pio018 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio018Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio018Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio018Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio018Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio018Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio018Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio018Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio018Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio018Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -1465,37 +1465,37 @@ impl Pio019 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio019Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio019Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio019Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio019Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio019Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio019Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio019Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio019Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio019Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1513,25 +1513,25 @@ impl Pio019 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio019Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio019Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio019Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio019Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio019Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio019Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -1576,37 +1576,37 @@ impl Pio02 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio02Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio02Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio02Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio02Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio02Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio02Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio02Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio02Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio02Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1624,25 +1624,25 @@ impl Pio02 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio02Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio02Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio02Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio02Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio02Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio02Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -1687,37 +1687,37 @@ impl Pio020 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio020Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio020Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio020Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio020Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio020Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio020Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio020Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio020Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio020Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1735,25 +1735,25 @@ impl Pio020 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio020Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio020Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio020Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio020Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio020Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio020Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -1798,37 +1798,37 @@ impl Pio021 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio021Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio021Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio021Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio021Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio021Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio021Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio021Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio021Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio021Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1846,25 +1846,25 @@ impl Pio021 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio021Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio021Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio021Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio021Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio021Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio021Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -1909,37 +1909,37 @@ impl Pio022 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio022Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio022Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio022Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio022Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio022Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio022Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio022Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio022Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio022Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -1957,25 +1957,25 @@ impl Pio022 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio022Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio022Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio022Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio022Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio022Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio022Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2020,37 +2020,37 @@ impl Pio023 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio023Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio023Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio023Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio023Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio023Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio023Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio023Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio023Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio023Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2068,37 +2068,37 @@ impl Pio023 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio023Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio023Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio023Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio023Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio023Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio023Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio023Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio023Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio023Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -2145,37 +2145,37 @@ impl Pio024 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio024Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio024Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio024Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio024Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio024Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio024Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio024Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio024Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio024Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2193,25 +2193,25 @@ impl Pio024 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio024Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio024Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio024Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio024Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio024Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio024Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2256,37 +2256,37 @@ impl Pio025 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio025Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio025Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio025Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio025Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio025Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio025Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio025Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio025Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio025Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2304,25 +2304,25 @@ impl Pio025 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio025Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio025Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio025Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio025Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio025Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio025Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2367,37 +2367,37 @@ impl Pio026 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio026Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio026Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio026Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio026Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio026Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio026Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio026Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio026Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio026Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2415,25 +2415,25 @@ impl Pio026 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio026Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio026Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio026Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio026Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio026Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio026Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2478,37 +2478,37 @@ impl Pio027 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio027Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio027Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio027Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio027Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio027Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio027Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio027Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio027Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio027Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2526,25 +2526,25 @@ impl Pio027 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio027Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio027Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio027Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio027Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio027Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio027Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2589,37 +2589,37 @@ impl Pio028 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio028Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio028Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio028Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio028Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio028Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio028Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio028Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio028Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio028Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2637,25 +2637,25 @@ impl Pio028 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio028Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio028Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio028Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio028Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio028Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio028Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2700,37 +2700,37 @@ impl Pio029 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio029Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio029Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio029Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio029Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio029Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio029Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio029Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio029Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio029Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2748,25 +2748,25 @@ impl Pio029 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio029Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio029Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio029Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio029Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio029Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio029Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2811,37 +2811,37 @@ impl Pio03 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio03Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio03Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio03Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio03Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio03Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio03Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio03Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio03Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio03Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2859,25 +2859,25 @@ impl Pio03 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio03Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio03Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio03Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio03Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio03Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio03Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -2922,37 +2922,37 @@ impl Pio030 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio030Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio030Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio030Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio030Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio030Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio030Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio030Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio030Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio030Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -2970,25 +2970,25 @@ impl Pio030 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio030Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio030Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio030Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio030Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio030Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio030Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3033,37 +3033,37 @@ impl Pio031 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio031Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio031Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio031Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio031Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio031Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio031Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio031Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio031Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio031Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3081,37 +3081,37 @@ impl Pio031 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio031Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio031Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio031Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio031Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio031Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio031Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio031Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio031Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio031Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -3158,37 +3158,37 @@ impl Pio04 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio04Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio04Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio04Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio04Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio04Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio04Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio04Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio04Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio04Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3206,25 +3206,25 @@ impl Pio04 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio04Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio04Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio04Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio04Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio04Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio04Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3269,37 +3269,37 @@ impl Pio05 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio05Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio05Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio05Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio05Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio05Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio05Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio05Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio05Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio05Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3317,25 +3317,25 @@ impl Pio05 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio05Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio05Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio05Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio05Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio05Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio05Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3380,37 +3380,37 @@ impl Pio06 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio06Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio06Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio06Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio06Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio06Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio06Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio06Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio06Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio06Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3428,25 +3428,25 @@ impl Pio06 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio06Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio06Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio06Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio06Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio06Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio06Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3491,37 +3491,37 @@ impl Pio07 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio07Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio07Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio07Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio07Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio07Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio07Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio07Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio07Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio07Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3539,25 +3539,25 @@ impl Pio07 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio07Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio07Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio07Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio07Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio07Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio07Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3602,37 +3602,37 @@ impl Pio08 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio08Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio08Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio08Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio08Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio08Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio08Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio08Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio08Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio08Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3650,25 +3650,25 @@ impl Pio08 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio08Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio08Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio08Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio08Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio08Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio08Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -3713,37 +3713,37 @@ impl Pio09 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio09Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio09Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio09Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio09Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio09Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio09Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio09Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio09Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio09Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3761,37 +3761,37 @@ impl Pio09 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio09Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio09Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio09Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio09Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio09Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio09Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio09Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio09Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio09Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -3838,37 +3838,37 @@ impl Pio10 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio10Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio10Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio10Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio10Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio10Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio10Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio10Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio10Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio10Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -3886,37 +3886,37 @@ impl Pio10 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio10Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio10Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio10Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio10Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio10Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio10Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio10Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio10Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio10Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -3963,37 +3963,37 @@ impl Pio11 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio11Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio11Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio11Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio11Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio11Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio11Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio11Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio11Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio11Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4011,25 +4011,25 @@ impl Pio11 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio11Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio11Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio11Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio11Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio11Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio11Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4074,37 +4074,37 @@ impl Pio110 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio110Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio110Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio110Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio110Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio110Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio110Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio110Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio110Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio110Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4122,25 +4122,25 @@ impl Pio110 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio110Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio110Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio110Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio110Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio110Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio110Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4185,37 +4185,37 @@ impl Pio111 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio111Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio111Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio111Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio111Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio111Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio111Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio111Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio111Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio111Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4233,25 +4233,25 @@ impl Pio111 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio111Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio111Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio111Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio111Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio111Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio111Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4296,37 +4296,37 @@ impl Pio112 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio112Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio112Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio112Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio112Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio112Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio112Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio112Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio112Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio112Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4344,25 +4344,25 @@ impl Pio112 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio112Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio112Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio112Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio112Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio112Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio112Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4407,37 +4407,37 @@ impl Pio113 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio113Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio113Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio113Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio113Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio113Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio113Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio113Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio113Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio113Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4455,25 +4455,25 @@ impl Pio113 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio113Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio113Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio113Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio113Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio113Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio113Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4518,37 +4518,37 @@ impl Pio114 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio114Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio114Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio114Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio114Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio114Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio114Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio114Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio114Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio114Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4566,37 +4566,37 @@ impl Pio114 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio114Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio114Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio114Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio114Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio114Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio114Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio114Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio114Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio114Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -4643,37 +4643,37 @@ impl Pio115 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio115Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio115Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio115Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio115Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio115Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio115Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio115Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio115Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio115Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4691,25 +4691,25 @@ impl Pio115 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio115Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio115Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio115Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio115Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio115Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio115Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4754,37 +4754,37 @@ impl Pio116 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio116Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio116Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio116Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio116Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio116Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio116Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio116Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio116Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio116Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4802,25 +4802,25 @@ impl Pio116 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio116Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio116Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio116Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio116Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio116Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio116Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4865,37 +4865,37 @@ impl Pio117 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio117Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio117Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio117Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio117Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio117Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio117Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio117Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio117Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio117Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -4913,25 +4913,25 @@ impl Pio117 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio117Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio117Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio117Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio117Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio117Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio117Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -4976,37 +4976,37 @@ impl Pio118 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio118Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio118Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio118Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio118Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio118Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio118Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio118Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio118Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio118Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5024,25 +5024,25 @@ impl Pio118 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio118Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio118Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio118Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio118Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio118Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio118Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5087,37 +5087,37 @@ impl Pio119 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio119Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio119Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio119Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio119Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio119Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio119Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio119Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio119Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio119Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5135,37 +5135,37 @@ impl Pio119 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio119Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio119Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio119Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio119Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio119Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio119Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio119Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio119Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio119Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -5212,37 +5212,37 @@ impl Pio12 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio12Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio12Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio12Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio12Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio12Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio12Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio12Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio12Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio12Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5260,25 +5260,25 @@ impl Pio12 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio12Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio12Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio12Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio12Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio12Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio12Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5323,37 +5323,37 @@ impl Pio120 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio120Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio120Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio120Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio120Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio120Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio120Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio120Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio120Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio120Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5371,25 +5371,25 @@ impl Pio120 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio120Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio120Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio120Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio120Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio120Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio120Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5434,37 +5434,37 @@ impl Pio121 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio121Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio121Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio121Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio121Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio121Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio121Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio121Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio121Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio121Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5482,25 +5482,25 @@ impl Pio121 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio121Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio121Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio121Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio121Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio121Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio121Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5545,37 +5545,37 @@ impl Pio122 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio122Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio122Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio122Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio122Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio122Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio122Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio122Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio122Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio122Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5593,25 +5593,25 @@ impl Pio122 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio122Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio122Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio122Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio122Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio122Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio122Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5656,37 +5656,37 @@ impl Pio123 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio123Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio123Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio123Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio123Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio123Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio123Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio123Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio123Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio123Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5704,25 +5704,25 @@ impl Pio123 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio123Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio123Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio123Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio123Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio123Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio123Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5767,37 +5767,37 @@ impl Pio124 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio124Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio124Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio124Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio124Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio124Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio124Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio124Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio124Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio124Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5815,25 +5815,25 @@ impl Pio124 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio124Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio124Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio124Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio124Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio124Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio124Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5878,37 +5878,37 @@ impl Pio125 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio125Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio125Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio125Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio125Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio125Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio125Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio125Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio125Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio125Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -5926,25 +5926,25 @@ impl Pio125 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio125Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio125Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio125Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio125Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio125Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio125Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -5989,37 +5989,37 @@ impl Pio126 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio126Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio126Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio126Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio126Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio126Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio126Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio126Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio126Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio126Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6037,25 +6037,25 @@ impl Pio126 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio126Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio126Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio126Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio126Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio126Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio126Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6100,37 +6100,37 @@ impl Pio127 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio127Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio127Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio127Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio127Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio127Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio127Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio127Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio127Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio127Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6148,25 +6148,25 @@ impl Pio127 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio127Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio127Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio127Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio127Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio127Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio127Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6211,37 +6211,37 @@ impl Pio128 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio128Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio128Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio128Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio128Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio128Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio128Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio128Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio128Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio128Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6259,25 +6259,25 @@ impl Pio128 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio128Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio128Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio128Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio128Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio128Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio128Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6322,37 +6322,37 @@ impl Pio129 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio129Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio129Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio129Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio129Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio129Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio129Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio129Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio129Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio129Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6370,25 +6370,25 @@ impl Pio129 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio129Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio129Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio129Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio129Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio129Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio129Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6433,37 +6433,37 @@ impl Pio13 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio13Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio13Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio13Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio13Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio13Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio13Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio13Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio13Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio13Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6481,25 +6481,25 @@ impl Pio13 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio13Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio13Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio13Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio13Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio13Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio13Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6544,37 +6544,37 @@ impl Pio130 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio130Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio130Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio130Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio130Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio130Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio130Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio130Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio130Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio130Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6592,25 +6592,25 @@ impl Pio130 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio130Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio130Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio130Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio130Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio130Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio130Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6655,37 +6655,37 @@ impl Pio131 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio131Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio131Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio131Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio131Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio131Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio131Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio131Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio131Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio131Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6703,25 +6703,25 @@ impl Pio131 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio131Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio131Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio131Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio131Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio131Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio131Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6766,37 +6766,37 @@ impl Pio14 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio14Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio14Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio14Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio14Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio14Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio14Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio14Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio14Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio14Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6814,25 +6814,25 @@ impl Pio14 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio14Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio14Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio14Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio14Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio14Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio14Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6877,37 +6877,37 @@ impl Pio15 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio15Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio15Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio15Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio15Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio15Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio15Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio15Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio15Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio15Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -6925,25 +6925,25 @@ impl Pio15 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio15Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio15Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio15Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio15Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio15Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio15Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -6988,37 +6988,37 @@ impl Pio16 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio16Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio16Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio16Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio16Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio16Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio16Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio16Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio16Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio16Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -7036,25 +7036,25 @@ impl Pio16 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio16Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio16Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio16Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio16Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio16Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio16Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -7099,37 +7099,37 @@ impl Pio17 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio17Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio17Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio17Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio17Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio17Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio17Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio17Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio17Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio17Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -7147,25 +7147,25 @@ impl Pio17 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio17Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio17Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio17Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio17Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio17Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio17Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
 }
@@ -7210,37 +7210,37 @@ impl Pio18 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio18Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio18Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio18Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio18Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio18Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio18Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio18Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio18Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio18Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -7258,37 +7258,37 @@ impl Pio18 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio18Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio18Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio18Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio18Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio18Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio18Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio18Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio18Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio18Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
@@ -7335,37 +7335,37 @@ impl Pio19 {
     #[doc = "Selects pin function."]
     #[must_use]
     #[inline(always)]
-    pub const fn func(&self) -> super::vals::Pio19Func {
+    pub const fn func(&self) -> super::vals::PioFunc {
         let val = (self.0 >> 0usize) & 0x0f;
-        super::vals::Pio19Func::from_bits(val as u8)
+        super::vals::PioFunc::from_bits(val as u8)
     }
     #[doc = "Selects pin function."]
     #[inline(always)]
-    pub const fn set_func(&mut self, val: super::vals::Pio19Func) {
+    pub const fn set_func(&mut self, val: super::vals::PioFunc) {
         self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[must_use]
     #[inline(always)]
-    pub const fn mode(&self) -> super::vals::Pio19Mode {
+    pub const fn mode(&self) -> super::vals::PioMode {
         let val = (self.0 >> 4usize) & 0x03;
-        super::vals::Pio19Mode::from_bits(val as u8)
+        super::vals::PioMode::from_bits(val as u8)
     }
     #[doc = "Selects function mode (on-chip pull-up/pull-down resistor control)."]
     #[inline(always)]
-    pub const fn set_mode(&mut self, val: super::vals::Pio19Mode) {
+    pub const fn set_mode(&mut self, val: super::vals::PioMode) {
         self.0 = (self.0 & !(0x03 << 4usize)) | (((val.to_bits() as u32) & 0x03) << 4usize);
     }
     #[doc = "Driver slew rate."]
     #[must_use]
     #[inline(always)]
-    pub const fn slew(&self) -> super::vals::Pio19Slew {
+    pub const fn slew(&self) -> super::vals::PioSlew {
         let val = (self.0 >> 6usize) & 0x01;
-        super::vals::Pio19Slew::from_bits(val as u8)
+        super::vals::PioSlew::from_bits(val as u8)
     }
     #[doc = "Driver slew rate."]
     #[inline(always)]
-    pub const fn set_slew(&mut self, val: super::vals::Pio19Slew) {
+    pub const fn set_slew(&mut self, val: super::vals::PioSlew) {
         self.0 = (self.0 & !(0x01 << 6usize)) | (((val.to_bits() as u32) & 0x01) << 6usize);
     }
     #[doc = "Input polarity."]
@@ -7383,37 +7383,37 @@ impl Pio19 {
     #[doc = "Select Digital mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn digimode(&self) -> super::vals::Pio19Digimode {
+    pub const fn digimode(&self) -> super::vals::PioDigimode {
         let val = (self.0 >> 8usize) & 0x01;
-        super::vals::Pio19Digimode::from_bits(val as u8)
+        super::vals::PioDigimode::from_bits(val as u8)
     }
     #[doc = "Select Digital mode."]
     #[inline(always)]
-    pub const fn set_digimode(&mut self, val: super::vals::Pio19Digimode) {
+    pub const fn set_digimode(&mut self, val: super::vals::PioDigimode) {
         self.0 = (self.0 & !(0x01 << 8usize)) | (((val.to_bits() as u32) & 0x01) << 8usize);
     }
     #[doc = "Controls open-drain mode."]
     #[must_use]
     #[inline(always)]
-    pub const fn od(&self) -> super::vals::Pio19Od {
+    pub const fn od(&self) -> super::vals::PioOd {
         let val = (self.0 >> 9usize) & 0x01;
-        super::vals::Pio19Od::from_bits(val as u8)
+        super::vals::PioOd::from_bits(val as u8)
     }
     #[doc = "Controls open-drain mode."]
     #[inline(always)]
-    pub const fn set_od(&mut self, val: super::vals::Pio19Od) {
+    pub const fn set_od(&mut self, val: super::vals::PioOd) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val.to_bits() as u32) & 0x01) << 9usize);
     }
     #[doc = "Analog switch input control."]
     #[must_use]
     #[inline(always)]
-    pub const fn asw(&self) -> super::vals::Pio19Asw {
+    pub const fn asw(&self) -> super::vals::PioAsw {
         let val = (self.0 >> 10usize) & 0x01;
-        super::vals::Pio19Asw::from_bits(val as u8)
+        super::vals::PioAsw::from_bits(val as u8)
     }
     #[doc = "Analog switch input control."]
     #[inline(always)]
-    pub const fn set_asw(&mut self, val: super::vals::Pio19Asw) {
+    pub const fn set_asw(&mut self, val: super::vals::PioAsw) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val.to_bits() as u32) & 0x01) << 10usize);
     }
 }
