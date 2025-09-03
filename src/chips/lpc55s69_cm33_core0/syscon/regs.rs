@@ -3270,13 +3270,13 @@ impl Fcclksel0 {
     #[doc = "Flexcomm Interface 0 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel0Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel0Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 0 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel0Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3307,13 +3307,13 @@ impl Fcclksel1 {
     #[doc = "Flexcomm Interface 1 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel1Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel1Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 1 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel1Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3344,13 +3344,13 @@ impl Fcclksel2 {
     #[doc = "Flexcomm Interface 2 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel2Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel2Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 2 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel2Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3381,13 +3381,13 @@ impl Fcclksel3 {
     #[doc = "Flexcomm Interface 3 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel3Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel3Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 3 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel3Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3418,13 +3418,13 @@ impl Fcclksel4 {
     #[doc = "Flexcomm Interface 4 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel4Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel4Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 4 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel4Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3455,13 +3455,13 @@ impl Fcclksel5 {
     #[doc = "Flexcomm Interface 5 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel5Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel5Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 5 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel5Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3492,13 +3492,13 @@ impl Fcclksel6 {
     #[doc = "Flexcomm Interface 6 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel6Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel6Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 6 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel6Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -3529,13 +3529,13 @@ impl Fcclksel7 {
     #[doc = "Flexcomm Interface 7 clock source select for Fractional Rate Divider."]
     #[must_use]
     #[inline(always)]
-    pub const fn sel(&self) -> super::vals::Fcclksel7Sel {
+    pub const fn sel(&self) -> super::vals::FcclkselSel {
         let val = (self.0 >> 0usize) & 0x07;
-        super::vals::Fcclksel7Sel::from_bits(val as u8)
+        super::vals::FcclkselSel::from_bits(val as u8)
     }
     #[doc = "Flexcomm Interface 7 clock source select for Fractional Rate Divider."]
     #[inline(always)]
-    pub const fn set_sel(&mut self, val: super::vals::Fcclksel7Sel) {
+    pub const fn set_sel(&mut self, val: super::vals::FcclkselSel) {
         self.0 = (self.0 & !(0x07 << 0usize)) | (((val.to_bits() as u32) & 0x07) << 0usize);
     }
 }
@@ -6975,97 +6975,97 @@ impl Presetctrl1 {
     #[doc = "FC0 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc0_rst(&self) -> super::vals::Fc0Rst {
+    pub const fn fc0_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 11usize) & 0x01;
-        super::vals::Fc0Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC0 reset control."]
     #[inline(always)]
-    pub const fn set_fc0_rst(&mut self, val: super::vals::Fc0Rst) {
+    pub const fn set_fc0_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
     }
     #[doc = "FC1 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc1_rst(&self) -> super::vals::Fc1Rst {
+    pub const fn fc1_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 12usize) & 0x01;
-        super::vals::Fc1Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC1 reset control."]
     #[inline(always)]
-    pub const fn set_fc1_rst(&mut self, val: super::vals::Fc1Rst) {
+    pub const fn set_fc1_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
     }
     #[doc = "FC2 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc2_rst(&self) -> super::vals::Fc2Rst {
+    pub const fn fc2_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 13usize) & 0x01;
-        super::vals::Fc2Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC2 reset control."]
     #[inline(always)]
-    pub const fn set_fc2_rst(&mut self, val: super::vals::Fc2Rst) {
+    pub const fn set_fc2_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
     }
     #[doc = "FC3 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc3_rst(&self) -> super::vals::Fc3Rst {
+    pub const fn fc3_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 14usize) & 0x01;
-        super::vals::Fc3Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC3 reset control."]
     #[inline(always)]
-    pub const fn set_fc3_rst(&mut self, val: super::vals::Fc3Rst) {
+    pub const fn set_fc3_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
     }
     #[doc = "FC4 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc4_rst(&self) -> super::vals::Fc4Rst {
+    pub const fn fc4_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 15usize) & 0x01;
-        super::vals::Fc4Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC4 reset control."]
     #[inline(always)]
-    pub const fn set_fc4_rst(&mut self, val: super::vals::Fc4Rst) {
+    pub const fn set_fc4_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
     }
     #[doc = "FC5 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc5_rst(&self) -> super::vals::Fc5Rst {
+    pub const fn fc5_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 16usize) & 0x01;
-        super::vals::Fc5Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC5 reset control."]
     #[inline(always)]
-    pub const fn set_fc5_rst(&mut self, val: super::vals::Fc5Rst) {
+    pub const fn set_fc5_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
     }
     #[doc = "FC6 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc6_rst(&self) -> super::vals::Fc6Rst {
+    pub const fn fc6_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 17usize) & 0x01;
-        super::vals::Fc6Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC6 reset control."]
     #[inline(always)]
-    pub const fn set_fc6_rst(&mut self, val: super::vals::Fc6Rst) {
+    pub const fn set_fc6_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 17usize)) | (((val.to_bits() as u32) & 0x01) << 17usize);
     }
     #[doc = "FC7 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc7_rst(&self) -> super::vals::Fc7Rst {
+    pub const fn fc7_rst(&self) -> super::vals::FcRst {
         let val = (self.0 >> 18usize) & 0x01;
-        super::vals::Fc7Rst::from_bits(val as u8)
+        super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC7 reset control."]
     #[inline(always)]
-    pub const fn set_fc7_rst(&mut self, val: super::vals::Fc7Rst) {
+    pub const fn set_fc7_rst(&mut self, val: super::vals::FcRst) {
         self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
     }
     #[doc = "Timer 2 reset control."]

@@ -133,3 +133,10 @@ transforms:
     blocks: iocon::Iocon
     from: pio1_\d+
     to: pio1
+
+  - !MergeEnums
+    from: syscon::vals::Fc\dRst
+    to: syscon::vals::FcRst
+  - !MergeEnums
+    from: syscon::vals::Fcclksel\dSel
+    to: syscon::vals::FcclkselSel
