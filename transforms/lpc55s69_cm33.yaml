@@ -140,3 +140,29 @@ transforms:
   - !MergeEnums
     from: syscon::vals::Fcclksel\dSel
     to: syscon::vals::FcclkselSel
+
+  - !MakeRegisterArray
+    blocks: syscon::Syscon
+    from: fcclksel\d
+    to: fcclksel
+  - !MakeRegisterArray
+    blocks: syscon::Syscon
+    from: flexfrg\dctrl    
+    to: flexfrgctrl  
+  - !MakeRegisterArray
+    blocks: syscon::Syscon
+    from: fcclkselx\d
+    to: fcckkselx
+  - !MakeRegisterArray
+    blocks: syscon::Syscon
+    from: flexfrgxctrl\d
+    to: flexfrgxctrl
+         
+  - !MakeFieldArray
+      fieldsets: syscon::regs::Presetctrl1
+      from: fc\d_rst
+      to: fc_rst
+  - !MakeFieldArray
+      fieldsets: syscon::regs::Presetctrl1
+      from: set_fc\d_rst
+      to: set_fc_rst

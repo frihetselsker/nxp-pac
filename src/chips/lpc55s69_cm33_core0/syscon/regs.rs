@@ -6975,98 +6975,18 @@ impl Presetctrl1 {
     #[doc = "FC0 reset control."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc0_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 11usize) & 0x01;
+    pub const fn fc_rst(&self, n: usize) -> super::vals::FcRst {
+        assert!(n < 8usize);
+        let offs = 11usize + n * 1usize;
+        let val = (self.0 >> offs) & 0x01;
         super::vals::FcRst::from_bits(val as u8)
     }
     #[doc = "FC0 reset control."]
     #[inline(always)]
-    pub const fn set_fc0_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 11usize)) | (((val.to_bits() as u32) & 0x01) << 11usize);
-    }
-    #[doc = "FC1 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc1_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 12usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC1 reset control."]
-    #[inline(always)]
-    pub const fn set_fc1_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 12usize)) | (((val.to_bits() as u32) & 0x01) << 12usize);
-    }
-    #[doc = "FC2 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc2_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 13usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC2 reset control."]
-    #[inline(always)]
-    pub const fn set_fc2_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 13usize)) | (((val.to_bits() as u32) & 0x01) << 13usize);
-    }
-    #[doc = "FC3 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc3_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 14usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC3 reset control."]
-    #[inline(always)]
-    pub const fn set_fc3_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 14usize)) | (((val.to_bits() as u32) & 0x01) << 14usize);
-    }
-    #[doc = "FC4 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc4_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 15usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC4 reset control."]
-    #[inline(always)]
-    pub const fn set_fc4_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 15usize)) | (((val.to_bits() as u32) & 0x01) << 15usize);
-    }
-    #[doc = "FC5 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc5_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 16usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC5 reset control."]
-    #[inline(always)]
-    pub const fn set_fc5_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 16usize)) | (((val.to_bits() as u32) & 0x01) << 16usize);
-    }
-    #[doc = "FC6 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc6_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 17usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC6 reset control."]
-    #[inline(always)]
-    pub const fn set_fc6_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 17usize)) | (((val.to_bits() as u32) & 0x01) << 17usize);
-    }
-    #[doc = "FC7 reset control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc7_rst(&self) -> super::vals::FcRst {
-        let val = (self.0 >> 18usize) & 0x01;
-        super::vals::FcRst::from_bits(val as u8)
-    }
-    #[doc = "FC7 reset control."]
-    #[inline(always)]
-    pub const fn set_fc7_rst(&mut self, val: super::vals::FcRst) {
-        self.0 = (self.0 & !(0x01 << 18usize)) | (((val.to_bits() as u32) & 0x01) << 18usize);
+    pub const fn set_fc_rst(&mut self, n: usize, val: super::vals::FcRst) {
+        assert!(n < 8usize);
+        let offs = 11usize + n * 1usize;
+        self.0 = (self.0 & !(0x01 << offs)) | (((val.to_bits() as u32) & 0x01) << offs);
     }
     #[doc = "Timer 2 reset control."]
     #[must_use]
@@ -7131,14 +7051,14 @@ impl core::fmt::Debug for Presetctrl1 {
             .field("sct_rst", &self.sct_rst())
             .field("sctipu_rst", &self.sctipu_rst())
             .field("utick_rst", &self.utick_rst())
-            .field("fc0_rst", &self.fc0_rst())
-            .field("fc1_rst", &self.fc1_rst())
-            .field("fc2_rst", &self.fc2_rst())
-            .field("fc3_rst", &self.fc3_rst())
-            .field("fc4_rst", &self.fc4_rst())
-            .field("fc5_rst", &self.fc5_rst())
-            .field("fc6_rst", &self.fc6_rst())
-            .field("fc7_rst", &self.fc7_rst())
+            .field("fc_rst[0]", &self.fc_rst(0usize))
+            .field("fc_rst[1]", &self.fc_rst(1usize))
+            .field("fc_rst[2]", &self.fc_rst(2usize))
+            .field("fc_rst[3]", &self.fc_rst(3usize))
+            .field("fc_rst[4]", &self.fc_rst(4usize))
+            .field("fc_rst[5]", &self.fc_rst(5usize))
+            .field("fc_rst[6]", &self.fc_rst(6usize))
+            .field("fc_rst[7]", &self.fc_rst(7usize))
             .field("timer2_rst", &self.timer2_rst())
             .field("usb0_dev_rst", &self.usb0_dev_rst())
             .field("timer0_rst", &self.timer0_rst())
@@ -7151,20 +7071,20 @@ impl defmt::Format for Presetctrl1 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Presetctrl1 {{ mrt_rst: {:?}, ostimer_rst: {:?}, sct_rst: {:?}, sctipu_rst: {:?}, utick_rst: {:?}, fc0_rst: {:?}, fc1_rst: {:?}, fc2_rst: {:?}, fc3_rst: {:?}, fc4_rst: {:?}, fc5_rst: {:?}, fc6_rst: {:?}, fc7_rst: {:?}, timer2_rst: {:?}, usb0_dev_rst: {:?}, timer0_rst: {:?}, timer1_rst: {:?} }}",
+            "Presetctrl1 {{ mrt_rst: {:?}, ostimer_rst: {:?}, sct_rst: {:?}, sctipu_rst: {:?}, utick_rst: {:?}, fc_rst[0]: {:?}, fc_rst[1]: {:?}, fc_rst[2]: {:?}, fc_rst[3]: {:?}, fc_rst[4]: {:?}, fc_rst[5]: {:?}, fc_rst[6]: {:?}, fc_rst[7]: {:?}, timer2_rst: {:?}, usb0_dev_rst: {:?}, timer0_rst: {:?}, timer1_rst: {:?} }}",
             self.mrt_rst(),
             self.ostimer_rst(),
             self.sct_rst(),
             self.sctipu_rst(),
             self.utick_rst(),
-            self.fc0_rst(),
-            self.fc1_rst(),
-            self.fc2_rst(),
-            self.fc3_rst(),
-            self.fc4_rst(),
-            self.fc5_rst(),
-            self.fc6_rst(),
-            self.fc7_rst(),
+            self.fc_rst(0usize),
+            self.fc_rst(1usize),
+            self.fc_rst(2usize),
+            self.fc_rst(3usize),
+            self.fc_rst(4usize),
+            self.fc_rst(5usize),
+            self.fc_rst(6usize),
+            self.fc_rst(7usize),
             self.timer2_rst(),
             self.usb0_dev_rst(),
             self.timer0_rst(),
