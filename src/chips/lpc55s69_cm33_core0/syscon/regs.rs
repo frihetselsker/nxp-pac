@@ -495,98 +495,18 @@ impl Ahbclkctrl1 {
     #[doc = "Enables the clock for the FC0."]
     #[must_use]
     #[inline(always)]
-    pub const fn fc0(&self) -> bool {
-        let val = (self.0 >> 11usize) & 0x01;
+    pub const fn fc(&self, n: usize) -> bool {
+        assert!(n < 8usize);
+        let offs = 11usize + n * 1usize;
+        let val = (self.0 >> offs) & 0x01;
         val != 0
     }
     #[doc = "Enables the clock for the FC0."]
     #[inline(always)]
-    pub const fn set_fc0(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 11usize)) | (((val as u32) & 0x01) << 11usize);
-    }
-    #[doc = "Enables the clock for the FC1."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc1(&self) -> bool {
-        let val = (self.0 >> 12usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC1."]
-    #[inline(always)]
-    pub const fn set_fc1(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 12usize)) | (((val as u32) & 0x01) << 12usize);
-    }
-    #[doc = "Enables the clock for the FC2."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc2(&self) -> bool {
-        let val = (self.0 >> 13usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC2."]
-    #[inline(always)]
-    pub const fn set_fc2(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 13usize)) | (((val as u32) & 0x01) << 13usize);
-    }
-    #[doc = "Enables the clock for the FC3."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc3(&self) -> bool {
-        let val = (self.0 >> 14usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC3."]
-    #[inline(always)]
-    pub const fn set_fc3(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 14usize)) | (((val as u32) & 0x01) << 14usize);
-    }
-    #[doc = "Enables the clock for the FC4."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc4(&self) -> bool {
-        let val = (self.0 >> 15usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC4."]
-    #[inline(always)]
-    pub const fn set_fc4(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 15usize)) | (((val as u32) & 0x01) << 15usize);
-    }
-    #[doc = "Enables the clock for the FC5."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc5(&self) -> bool {
-        let val = (self.0 >> 16usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC5."]
-    #[inline(always)]
-    pub const fn set_fc5(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 16usize)) | (((val as u32) & 0x01) << 16usize);
-    }
-    #[doc = "Enables the clock for the FC6."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc6(&self) -> bool {
-        let val = (self.0 >> 17usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC6."]
-    #[inline(always)]
-    pub const fn set_fc6(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 17usize)) | (((val as u32) & 0x01) << 17usize);
-    }
-    #[doc = "Enables the clock for the FC7."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn fc7(&self) -> bool {
-        let val = (self.0 >> 18usize) & 0x01;
-        val != 0
-    }
-    #[doc = "Enables the clock for the FC7."]
-    #[inline(always)]
-    pub const fn set_fc7(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 18usize)) | (((val as u32) & 0x01) << 18usize);
+    pub const fn set_fc(&mut self, n: usize, val: bool) {
+        assert!(n < 8usize);
+        let offs = 11usize + n * 1usize;
+        self.0 = (self.0 & !(0x01 << offs)) | (((val as u32) & 0x01) << offs);
     }
     #[doc = "Enables the clock for the Timer 2."]
     #[must_use]
@@ -650,14 +570,14 @@ impl core::fmt::Debug for Ahbclkctrl1 {
             .field("ostimer", &self.ostimer())
             .field("sct", &self.sct())
             .field("utick", &self.utick())
-            .field("fc0", &self.fc0())
-            .field("fc1", &self.fc1())
-            .field("fc2", &self.fc2())
-            .field("fc3", &self.fc3())
-            .field("fc4", &self.fc4())
-            .field("fc5", &self.fc5())
-            .field("fc6", &self.fc6())
-            .field("fc7", &self.fc7())
+            .field("fc[0]", &self.fc(0usize))
+            .field("fc[1]", &self.fc(1usize))
+            .field("fc[2]", &self.fc(2usize))
+            .field("fc[3]", &self.fc(3usize))
+            .field("fc[4]", &self.fc(4usize))
+            .field("fc[5]", &self.fc(5usize))
+            .field("fc[6]", &self.fc(6usize))
+            .field("fc[7]", &self.fc(7usize))
             .field("timer2", &self.timer2())
             .field("usb0_dev", &self.usb0_dev())
             .field("timer0", &self.timer0())
@@ -670,19 +590,19 @@ impl defmt::Format for Ahbclkctrl1 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Ahbclkctrl1 {{ mrt: {=bool:?}, ostimer: {=bool:?}, sct: {=bool:?}, utick: {=bool:?}, fc0: {=bool:?}, fc1: {=bool:?}, fc2: {=bool:?}, fc3: {=bool:?}, fc4: {=bool:?}, fc5: {=bool:?}, fc6: {=bool:?}, fc7: {=bool:?}, timer2: {=bool:?}, usb0_dev: {=bool:?}, timer0: {=bool:?}, timer1: {=bool:?} }}",
+            "Ahbclkctrl1 {{ mrt: {=bool:?}, ostimer: {=bool:?}, sct: {=bool:?}, utick: {=bool:?}, fc[0]: {=bool:?}, fc[1]: {=bool:?}, fc[2]: {=bool:?}, fc[3]: {=bool:?}, fc[4]: {=bool:?}, fc[5]: {=bool:?}, fc[6]: {=bool:?}, fc[7]: {=bool:?}, timer2: {=bool:?}, usb0_dev: {=bool:?}, timer0: {=bool:?}, timer1: {=bool:?} }}",
             self.mrt(),
             self.ostimer(),
             self.sct(),
             self.utick(),
-            self.fc0(),
-            self.fc1(),
-            self.fc2(),
-            self.fc3(),
-            self.fc4(),
-            self.fc5(),
-            self.fc6(),
-            self.fc7(),
+            self.fc(0usize),
+            self.fc(1usize),
+            self.fc(2usize),
+            self.fc(3usize),
+            self.fc(4usize),
+            self.fc(5usize),
+            self.fc(6usize),
+            self.fc(7usize),
             self.timer2(),
             self.usb0_dev(),
             self.timer0(),

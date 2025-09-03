@@ -166,3 +166,12 @@ transforms:
       fieldsets: syscon::regs::Presetctrl1
       from: set_fc\d_rst
       to: set_fc_rst
+  
+  - !MakeFieldArray
+      fieldsets: syscon::regs::Ahbclkctrl1
+      from: fc\d
+      to: fc
+  - !MakeFieldArray
+      fieldsets: syscon::regs::Ahbclkctrl1
+      from: set_fc\d
+      to: set_fc
