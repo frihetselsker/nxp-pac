@@ -251,85 +251,24 @@ impl Syscon {
     pub const fn usb0clksel(self) -> crate::common::Reg<regs::Usb0clksel, crate::common::RW> {
         unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02a8usize) as _) }
     }
+    #[doc = "Peripheral reset control register"]
+    #[inline(always)]
+    pub const fn fcckkselx(
+        self,
+        n: usize,
+    ) -> crate::common::Reg<regs::Fcclkselx, crate::common::RW> {
+        assert!(n < 8usize);
+        unsafe {
+            crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b0usize + n * 4usize) as _)
+        }
+    }
     #[doc = "Flexcomm Interface 0 clock source select for Fractional Rate Divider"]
     #[inline(always)]
-    pub const fn fcclksel0(self) -> crate::common::Reg<regs::Fcclksel0, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b0usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx0(self) -> crate::common::Reg<regs::Fcclkselx0, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b0usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 1 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel1(self) -> crate::common::Reg<regs::Fcclksel1, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b4usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx1(self) -> crate::common::Reg<regs::Fcclkselx1, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b4usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 2 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel2(self) -> crate::common::Reg<regs::Fcclksel2, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b8usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx2(self) -> crate::common::Reg<regs::Fcclkselx2, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b8usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 3 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel3(self) -> crate::common::Reg<regs::Fcclksel3, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02bcusize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx3(self) -> crate::common::Reg<regs::Fcclkselx3, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02bcusize) as _) }
-    }
-    #[doc = "Flexcomm Interface 4 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel4(self) -> crate::common::Reg<regs::Fcclksel4, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c0usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx4(self) -> crate::common::Reg<regs::Fcclkselx4, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c0usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 5 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel5(self) -> crate::common::Reg<regs::Fcclksel5, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c4usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx5(self) -> crate::common::Reg<regs::Fcclkselx5, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c4usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 6 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel6(self) -> crate::common::Reg<regs::Fcclksel6, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c8usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx6(self) -> crate::common::Reg<regs::Fcclkselx6, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02c8usize) as _) }
-    }
-    #[doc = "Flexcomm Interface 7 clock source select for Fractional Rate Divider"]
-    #[inline(always)]
-    pub const fn fcclksel7(self) -> crate::common::Reg<regs::Fcclksel7, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02ccusize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn fcclkselx7(self) -> crate::common::Reg<regs::Fcclkselx7, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02ccusize) as _) }
+    pub const fn fcclksel(self, n: usize) -> crate::common::Reg<regs::Fcclksel, crate::common::RW> {
+        assert!(n < 8usize);
+        unsafe {
+            crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x02b0usize + n * 4usize) as _)
+        }
     }
     #[doc = "HS LSPI clock source select"]
     #[inline(always)]
@@ -372,83 +311,25 @@ impl Syscon {
     }
     #[doc = "Fractional rate divider for flexcomm 0"]
     #[inline(always)]
-    pub const fn flexfrg0ctrl(self) -> crate::common::Reg<regs::Flexfrg0ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0320usize) as _) }
+    pub const fn flexfrgctrl(
+        self,
+        n: usize,
+    ) -> crate::common::Reg<regs::Flexfrgctrl, crate::common::RW> {
+        assert!(n < 8usize);
+        unsafe {
+            crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0320usize + n * 4usize) as _)
+        }
     }
     #[doc = "Peripheral reset control register"]
     #[inline(always)]
-    pub const fn flexfrgxctrl0(self) -> crate::common::Reg<regs::Flexfrgxctrl0, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0320usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 1"]
-    #[inline(always)]
-    pub const fn flexfrg1ctrl(self) -> crate::common::Reg<regs::Flexfrg1ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0324usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl1(self) -> crate::common::Reg<regs::Flexfrgxctrl1, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0324usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 2"]
-    #[inline(always)]
-    pub const fn flexfrg2ctrl(self) -> crate::common::Reg<regs::Flexfrg2ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0328usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl2(self) -> crate::common::Reg<regs::Flexfrgxctrl2, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0328usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 3"]
-    #[inline(always)]
-    pub const fn flexfrg3ctrl(self) -> crate::common::Reg<regs::Flexfrg3ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x032cusize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl3(self) -> crate::common::Reg<regs::Flexfrgxctrl3, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x032cusize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 4"]
-    #[inline(always)]
-    pub const fn flexfrg4ctrl(self) -> crate::common::Reg<regs::Flexfrg4ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0330usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl4(self) -> crate::common::Reg<regs::Flexfrgxctrl4, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0330usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 5"]
-    #[inline(always)]
-    pub const fn flexfrg5ctrl(self) -> crate::common::Reg<regs::Flexfrg5ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0334usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl5(self) -> crate::common::Reg<regs::Flexfrgxctrl5, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0334usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 6"]
-    #[inline(always)]
-    pub const fn flexfrg6ctrl(self) -> crate::common::Reg<regs::Flexfrg6ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0338usize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl6(self) -> crate::common::Reg<regs::Flexfrgxctrl6, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0338usize) as _) }
-    }
-    #[doc = "Fractional rate divider for flexcomm 7"]
-    #[inline(always)]
-    pub const fn flexfrg7ctrl(self) -> crate::common::Reg<regs::Flexfrg7ctrl, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x033cusize) as _) }
-    }
-    #[doc = "Peripheral reset control register"]
-    #[inline(always)]
-    pub const fn flexfrgxctrl7(self) -> crate::common::Reg<regs::Flexfrgxctrl7, crate::common::RW> {
-        unsafe { crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x033cusize) as _) }
+    pub const fn flexfrgxctrl(
+        self,
+        n: usize,
+    ) -> crate::common::Reg<regs::Flexfrgxctrl, crate::common::RW> {
+        assert!(n < 8usize);
+        unsafe {
+            crate::common::Reg::from_ptr(self.ptr.wrapping_add(0x0320usize + n * 4usize) as _)
+        }
     }
     #[doc = "System clock divider"]
     #[inline(always)]

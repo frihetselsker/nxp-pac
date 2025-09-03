@@ -160,18 +160,34 @@ transforms:
     blocks: syscon::Syscon
     from: fcclksel\d
     to: fcclksel
+  - !MergeFieldsets
+    from: syscon::regs::Fcclksel\d
+    to: syscon::regs::Fcclksel
+
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrg\dctrl    
     to: flexfrgctrl  
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrg\dctrl
+    to: syscon::regs::Flexfrgctrl 
+
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: fcclkselx\d
     to: fcckkselx
+  - !MergeFieldsets
+    from: syscon::regs::Fcclkselx\d
+    to: syscon::regs::Fcclkselx
+    
+
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrgxctrl\d
     to: flexfrgxctrl
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrgxctrl\d
+    to: syscon::regs::Flexfrgxctrl
 
   - !MakeFieldArray
     fieldsets: syscon::regs::Presetctrl1
