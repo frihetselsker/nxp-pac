@@ -124,3 +124,12 @@ transforms:
   - !MergeEnums
     from: iocon::vals::Pio\d+Egp
     to: iocon::vals::PioEgp
+
+  - !MakeRegisterArray
+    blocks: iocon::Iocon
+    from: pio0_\d+
+    to: pio0
+  - !MakeRegisterArray
+    blocks: iocon::Iocon
+    from: pio1_\d+
+    to: pio1
